@@ -75,7 +75,7 @@ const Contact = () => {
       import.meta.env.VITE_TEMPLATE_ID,      
       contact.current,
       {
-        publicKey: import.meta.env.VITE_PUBLIC_KEY,
+        publicKey: 'v35gDMaGJkfaGMBel',
       }
     )
     .then(() => {
