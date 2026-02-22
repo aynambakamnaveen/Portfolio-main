@@ -90,7 +90,7 @@ useGSAP(() => {
 
                 
                 <p className='md:text-xl text-base font-light tracking-wide max-w-2xl text-center text-white/80'>
-                    I've worked on a variety of projects, from simple websites to complex applications.
+                    I've worked on a variety of projects, from simple websites to complex applications,
                     Some are getting ready — these are a few completed projects.
                 </p>
 
