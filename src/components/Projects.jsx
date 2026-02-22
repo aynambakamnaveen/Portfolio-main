@@ -124,9 +124,9 @@ useGSAP(() => {
                         </div>
 
                         <div className='px-3 flex gap-3 mt-4 mb-4'>
-                            <button className='bg-white text-black rounded-lg px-4 py-2 text-sm font-medium hover:scale-105 transition'>
-                                🌐 View Project
-                            </button>
+                            <a href='https://portfolio-main1-two.vercel.app/' target='_blank'><button className='bg-white text-black rounded-lg px-4 py-2 text-sm font-medium hover:scale-105 transition'>
+                                🌐 Live Demo
+                            </button></a>
                             <button className='bg-white text-black rounded-lg px-4 py-2 text-sm font-medium hover:scale-105 transition'>
                                 🔗 Source
                             </button>

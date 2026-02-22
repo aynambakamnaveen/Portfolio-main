@@ -3,7 +3,7 @@
 Animated portfolio built using React + GSAP.
 
 ## 🚀 Live Demo
-(coming soon)
+https://portfolio-main1-two.vercel.app/
 
 ## 🛠 Tech Stack
 React, Tailwind CSS, Vite , GSAP
