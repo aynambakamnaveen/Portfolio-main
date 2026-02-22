@@ -1,0 +1,57 @@
+@import "tailwindcss";
+html, body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; 
+}
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-dm: "DM Sans", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-zalando: "Zalando Sans", sans-serif;
+  --font-zalando-expanded: "Zalando Sans Expanded", sans-serif;
+
+  --font-monos: "JetBrains Mono", monospace;
+  --font-tech: "Share Tech Mono", monospace;
+
+  --font-cursive: "Edu NSW ACT Cursive", cursive;
+  --font-gravitas: "Gravitas One", cursive;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: white !important; /* or black */
+  transition: background-color 9999s ease-in-out 0s;
+}
+@layer utilities {
+  .particle-container{
+    @apply  w-full inset-0  fixed z-0 pointer-events-none overflow-hidden;
+  }
+  .particle{
+    @apply absolute rounded-full;
+      box-shadow:
+    0 0 4px #22c55e,
+    0 0 8px #22c55e,
+    0 0 14px #16a34a,
+    0 0 22px #16a34a;;
+    animation: float linear infinite ease-in-out;
+    background: #22c55e;
+  }
+}
+#smooth-wrapper {
+  overflow: hidden;
+}
+
+#smooth-content {
+  will-change: transform;
+}
+
