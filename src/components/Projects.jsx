@@ -44,8 +44,6 @@ useGSAP(() => {
         toggleActions: "play none none reverse",
     },
     });
-
-    // heading reveal
     gsap.from(heading.current, {
       scale: 0.8,
       opacity: 0,
@@ -72,9 +70,7 @@ useGSAP(() => {
     });
 
   });
-
   return () => mm.revert();
-
 });
     return (
             <div id='main' className='min-h-screen w-full text-white flex flex-col items-center gap-4 md:gap-6 relative px-4'>
