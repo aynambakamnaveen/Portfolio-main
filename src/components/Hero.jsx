@@ -86,10 +86,12 @@ const Hero = () => {
 
             {/* Buttons */}
             <div className="flex flex-row flex-wrap items-center gap-3 mt-3 md:mt-6">
-              <button className="cursor-scale bg-gradient-to-br from-blue-200 to-pink-400 text-black font-semibold px-4 py-2.5 lg:px-8 lg:py-3 rounded-full flex items-center gap-2 hover:scale-105 active:scale-95 transition shadow-lg shadow-blue-500/30 text-sm lg:text-base">
-                <a href="/Resume.pdf" download>Download Resume</a>
-                <MdFileDownload className="text-base" />
-              </button>
+              <a href="/Resume.pdf" download="naveen_resume.pdf" className="no-underline">
+                <button className="cursor-scale bg-gradient-to-br from-blue-200 to-pink-400 text-black font-semibold px-4 py-2.5 lg:px-8 lg:py-3 rounded-full flex items-center gap-2 hover:scale-105 active:scale-95 transition shadow-lg shadow-blue-500/30 text-sm lg:text-base">
+                  Download Resume
+                  <MdFileDownload className="text-base" />
+                </button>
+              </a>
 
               <a className="cursor-scale" href="#Projects">
                 <button className="bg-gradient-to-r from-emerald-300 via-green-400 to-emerald-600 text-black font-semibold px-4 py-2.5 lg:px-8 lg:py-3 rounded-full hover:scale-105 active:scale-95 transition shadow-lg shadow-green-500/50 tracking-wider flex items-center gap-2 text-sm lg:text-base">
