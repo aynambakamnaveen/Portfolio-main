@@ -1,6 +1,6 @@
 import React from 'react'
 import portfolio from './portfolio.png'
-import project2 from './project2.png'
+import project2 from './image2.png'
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef,useState } from "react";
@@ -120,11 +120,11 @@ useGSAP(() => {
                         </div>
 
                         <div className='px-3 flex gap-3 mt-4 mb-4'>
-                            <a href='https://portfolio-main1-two.vercel.app/' target='_blank'><button className='bg-white text-black rounded-lg px-4 py-2 text-sm font-medium hover:scale-105 transition'>
+                            <a href='https://portfolio-main1-two.vercel.app/' target='_blank'><button className='bg-white text-black rounded-lg px-4 py-2 text-sm font-medium hover:scale-105 transition cursor-pointer'>
                                 🌐 Live Demo
                             </button></a>
-                            <button className='bg-white text-black rounded-lg px-4 py-2 text-sm font-medium hover:scale-105 transition'>
-                                🔗 Source
+                            <button className='bg-white text-black rounded-lg px-4 py-2 text-sm font-medium hover:scale-105 transition cursor-pointer'>
+                                <a target='_blank' href="https://github.com/aynambakamnaveen/portfolio-main1.git">🔗 Source</a>
                             </button>
                         </div>
                     </div>
@@ -137,24 +137,27 @@ useGSAP(() => {
                         <img className='object-cover w-full h-[220px]' src={project2} alt="cover_page" />
 
                         <span className='px-3 text-lg md:text-xl font-semibold font-poppins'>
-                            Find It 🐎
+                            PureNote 📝
                         </span>
 
                         <p className='px-3 text-left font-medium text-sm md:text-base text-white/80'>
-                            A simple modern job portal helping students discover jobs and internships easily.
+                            Implemented secure user authentication and authorization using JWT (Login/Register system). Developed complete CRUD functionality including adding, editing, deleting, and pinning notes, along with marking tasks as completed.
                         </p>
 
                         <div className='flex flex-wrap gap-2 mt-3 px-3'>
-                            <span className='border border-white/90 rounded-full px-3 py-1 text-sm'>React</span>
-                            <span className='border border-white/90 rounded-full px-3 py-1 text-sm'>Tailwind</span>
-                            <span className='border border-white/90 rounded-full px-3 py-1 text-sm'>Node</span>
-                            <span className='border border-white/90 rounded-full px-3 py-1 text-sm'>Express</span>
+                            <span className='border border-white/90 rounded-full px-3 py-1 text-sm'>Node.js</span>
+                            <span className='border border-white/90 rounded-full px-3 py-1 text-sm'>Express.js</span>
                             <span className='border border-white/90 rounded-full px-3 py-1 text-sm'>MongoDB</span>
+                            <span className='border border-white/90 rounded-full px-3 py-1 text-sm'>React</span>
+                            <span className='border border-white/90 rounded-full px-3 py-1 text-sm'>Daisy UI</span>
                         </div>
 
                         <div className='px-3 flex gap-3 mt-4 mb-4'>
-                            <button className='bg-white text-black rounded-lg px-4 py-2 text-sm font-medium opacity-80 cursor-default'>
-                                ❤️ Coming soon...
+                            <a href='https://frontend-notes-lyart.vercel.app/' target='_blank'><button className='bg-white text-black rounded-lg px-4 py-2 text-sm font-medium hover:scale-105 transition cursor-pointer'>
+                                🌐 Live Demo
+                            </button></a>
+                            <button className='bg-white text-black rounded-lg px-4 py-2 text-sm font-medium hover:scale-105 transition cursor-pointer'>
+                                <a target="_blank" href="https://github.com/aynambakamnaveen/frontend-notes.git">🔗 Source</a>
                             </button>
                         </div>
                     </div>
