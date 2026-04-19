@@ -87,7 +87,7 @@ const Hero = () => {
             {/* Buttons */}
             <div className="flex flex-row flex-wrap items-center gap-3 mt-3 md:mt-6">
               <button className="cursor-scale bg-gradient-to-br from-blue-200 to-pink-400 text-black font-semibold px-4 py-2.5 lg:px-8 lg:py-3 rounded-full flex items-center gap-2 hover:scale-105 active:scale-95 transition shadow-lg shadow-blue-500/30 text-sm lg:text-base">
-                <a href="/Resume.pdf" download="Naveen_Kumar_Resume.pdf">Download Resume</a>
+                <a href="/Resume.pdf" download>Download Resume</a>
                 <MdFileDownload className="text-base" />
               </button>
 
