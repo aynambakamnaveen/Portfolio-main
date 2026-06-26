@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 html, body {
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -26,6 +27,7 @@ body::-webkit-scrollbar {
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
+
 input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
   box-shadow: 0 0 0 1000px transparent inset !important;
@@ -48,6 +50,7 @@ input:-webkit-autofill:active {
     background: #22c55e;
   }
 }
+
 #smooth-wrapper {
   overflow: hidden;
 }

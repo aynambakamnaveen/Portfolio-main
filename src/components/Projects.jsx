@@ -1,6 +1,7 @@
 import React from 'react'
 import portfolio from './portfolio.png'
 import project2 from './image2.png'
+import project3 from './project3.png'
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef,useState } from "react";
@@ -63,7 +64,7 @@ useGSAP(() => {
       ease: "none",
       scrollTrigger: {
         trigger: "#main",
-        start: "top 60%",
+        start: "top",
         end: "bottom top",
         scrub: 1, 
       },
@@ -96,7 +97,6 @@ useGSAP(() => {
 
                 
                 <div className='flex flex-col md:flex-row gap-6 md:gap-8 py-4'>
-
                     {/* CARD 1 */}
                     <div
                         ref={left}
@@ -128,8 +128,41 @@ useGSAP(() => {
                             </button>
                         </div>
                     </div>
+                    <div
+                        ref={right}
+                        className='flex flex-col gap-2 w-full max-w-sm md:max-w-none md:w-[350px] border border-white/20 rounded-xl overflow-hidden backdrop-blur-sm bg-white/5 hover:bg-white/10 transition shadow-lg'
+                    >
+                        <img className='object-cover w-full h-[220px] p-1' src={project3} alt="cover_page" />
 
-                    {/* CARD 2 */}
+                        <span className='px-3 text-lg md:text-xl font-semibold font-poppins'>
+                            Med Mind AI⚛
+                        </span>
+
+                        <p className='px-3 text-left font-medium text-sm md:text-base text-white/80'>
+                            Built an AI-powered medical chatbot with secure JWT authentication and intelligent health assistance. Integrated Razorpay payment gateway for premium subscriptions, chat history, symptom analysis, appointment booking, and personalized AI conversations.
+                        </p>
+
+                        <div className='flex flex-wrap gap-2 mt-3 px-3'>
+                            <span className='border border-white/90 rounded-full px-3 py-1 text-sm'>Node.js</span>
+                            <span className='border border-white/90 rounded-full px-3 py-1 text-sm'>Express.js</span>
+                            <span className='border border-white/90 rounded-full px-3 py-1 text-sm'>MongoDB</span>
+                            <span className='border border-white/90 rounded-full px-3 py-1 text-sm'>React</span>
+                            <span className='border border-white/90 rounded-full px-3 py-1 text-sm'>TailwindCSS</span>
+                            <span className='border border-white/90 rounded-full px-3 py-1 text-sm'>Razorpay</span>
+                            <span className='border border-white/90 rounded-full px-3 py-1 text-sm'>OpenAI API</span>
+                            <span className='border border-white/90 rounded-full px-3 py-1 text-sm'>Daisy UI</span>
+                        </div>
+
+                        <div className='px-3 flex gap-3 mt-4 mb-4'>
+                            <a href='https://med-mind-ai-azure.vercel.app/' target='_blank'><button className='bg-white text-black rounded-lg px-4 py-2 text-sm font-medium hover:scale-105 transition cursor-pointer'>
+                                🌐 Live Demo
+                            </button></a>
+                            <button className='bg-white text-black rounded-lg px-4 py-2 text-sm font-medium hover:scale-105 transition cursor-pointer'>
+                                <a target='_blank' href="https://github.com/aynambakamnaveen/Med-Mind-AI.git">🔗 Source</a>
+                            </button>
+                        </div>
+                    </div>
+                    {/* CARD 3 */}
                     <div
                         ref={right}
                         className='flex flex-col gap-2 w-full max-w-sm md:max-w-none md:w-[350px] border border-white/20 rounded-xl overflow-hidden backdrop-blur-sm bg-white/5 hover:bg-white/10 transition shadow-lg'
@@ -163,7 +196,6 @@ useGSAP(() => {
                     </div>
 
                 </div>
-
                 
                 <img
                     ref={imgRef2}
